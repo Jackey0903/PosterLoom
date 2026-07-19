@@ -2,6 +2,8 @@
 
 Project page for **PosterLoom: Editable, Print-Ready, and Diverse Academic Poster Generation from Scientific Papers**.
 
+**Live site:** [jackey0903.github.io/PosterLoom](https://jackey0903.github.io/PosterLoom/)
+
 The site is a static GitHub Pages deployment based on the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template). It contains the paper overview, method figure, template library, poster variants, qualitative case study, benchmark composition, PDF, and citation.
 
 ## Local preview
