@@ -77,8 +77,7 @@ button { letter-spacing: 0; }
   width: 42px;
   height: 42px;
   flex: 0 0 42px;
-  object-fit: cover;
-  mix-blend-mode: multiply;
+  object-fit: contain;
 }
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a {
@@ -151,7 +150,6 @@ button { letter-spacing: 0; }
   width: 132px;
   height: 132px;
   object-fit: contain;
-  mix-blend-mode: multiply;
 }
 .hero-title-copy { min-width: 0; }
 .eyebrow,
@@ -342,7 +340,7 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
 .gallery-band { background: #eef3f1; }
 .variant-gallery {
   display: grid;
-  grid-template-columns: 0.88fr 1.25fr 2fr;
+  grid-template-columns: 1fr 1fr 1.75fr;
   align-items: center;
   gap: 18px;
 }
@@ -516,7 +514,7 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .contribution-strip, .method-steps { grid-template-columns: repeat(2, 1fr); }
   .contribution-strip article:nth-child(3) { border-left: 0; border-top: 1px solid var(--rule-dark); }
   .method-steps article:nth-child(3) { padding-left: 0; border-left: 0; }
-  .variant-gallery { grid-template-columns: 0.88fr 1.25fr; }
+  .variant-gallery { grid-template-columns: 1fr 1fr; }
   .variant-gallery .wide-landscape { grid-column: 1 / -1; }
   .dataset-breakdown { grid-template-columns: repeat(3, 1fr); }
   .dataset-breakdown span:nth-child(4) { border-left: 0; border-top: 1px solid var(--rule-dark); }
@@ -547,7 +545,6 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .contribution-strip, .method-steps, .poster-grid { grid-template-columns: 1fr; }
   .variant-gallery { grid-template-columns: 1fr; }
   .variant-gallery .wide-landscape { grid-column: auto; }
-  .variant-gallery .portrait-tall,
   .variant-gallery .portrait-balanced { width: min(100%, 330px); justify-self: center; }
   .contribution-strip article + article { border-left: 0; border-top: 1px solid var(--rule-dark); }
   .method-steps article, .method-steps article + article { padding: 22px 0; border-left: 0; border-bottom: 1px solid var(--rule); }
