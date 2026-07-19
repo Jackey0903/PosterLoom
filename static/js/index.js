@@ -38,17 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.target === dialog) closeDialog();
   });
 
-  document.querySelectorAll('[data-copy-target]').forEach((button) => {
-    button.addEventListener('click', async () => {
-      const target = document.getElementById(button.dataset.copyTarget);
-      if (!target) return;
-      await navigator.clipboard.writeText(target.innerText);
-      const label = button.querySelector('span');
-      if (label) label.textContent = 'Copied';
-      setTimeout(() => { if (label) label.textContent = 'Copy'; }, 1600);
-    });
-  });
-
   window.addEventListener('scroll', () => {
     backToTop?.classList.toggle('visible', window.scrollY > 700);
   }, { passive: true });

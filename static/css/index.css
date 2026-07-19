@@ -191,19 +191,8 @@ button { letter-spacing: 0; }
   font-size: clamp(18px, 1.7vw, 23px);
   line-height: 1.55;
 }
-.author-line {
-  margin-top: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  color: var(--ink-soft);
-  font-size: 15px;
-  font-weight: 600;
-}
-.author-line .separator { width: 36px; height: 1px; background: var(--rule-dark); }
 .hero-actions {
-  margin-top: 28px;
+  margin-top: 34px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -407,28 +396,6 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
 .dataset-breakdown span + span { border-left: 1px solid var(--rule-dark); }
 .dataset-breakdown strong { margin-right: 6px; color: var(--navy); font-size: 20px; }
 
-.citation-band { background: var(--navy-deep); color: #fff; }
-.citation-band .section-index { color: #78d1ca; }
-.citation-band .section-heading h2 { color: #fff; }
-.citation-band .section-deck { color: #b9c5d4; }
-.citation-box { position: relative; border: 1px solid rgba(255,255,255,0.25); background: #07172c; }
-.citation-box pre { margin: 0; padding: 30px; overflow-x: auto; color: #eaf2f3; background: transparent; font-family: var(--mono); font-size: 13px; line-height: 1.65; }
-.copy-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 2;
-  padding: 7px 10px;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  border: 1px solid rgba(255,255,255,0.32);
-  color: #fff;
-  background: var(--navy);
-  font-size: 11px;
-  cursor: pointer;
-}
-
 .site-footer { padding: 36px 0; color: #6a7582; background: #eef0ed; font-size: 12px; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .footer-inner > div { display: flex; align-items: baseline; gap: 12px; }
@@ -531,8 +498,6 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .hero-project-name { font-size: 62px; line-height: 0.88; }
   .hero-paper-title { margin-top: 14px; font-size: 31px; line-height: 1.06; }
   .hero-lede { font-size: 17px; }
-  .author-line { flex-direction: column; gap: 6px; }
-  .author-line .separator { display: none; }
   .hero-stats { margin-top: 48px; }
   .hero-stats div { padding: 14px 10px; }
   .hero-stats strong { font-size: 25px; }
@@ -555,6 +520,5 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .dataset-breakdown { grid-template-columns: repeat(2, 1fr); }
   .dataset-breakdown span:nth-child(3), .dataset-breakdown span:nth-child(5) { border-left: 0; border-top: 1px solid var(--rule-dark); }
   .dataset-breakdown span:nth-child(4) { border-left: 1px solid var(--rule-dark); }
-  .citation-box pre { padding: 56px 16px 20px; font-size: 10px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }
