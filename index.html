@@ -31,7 +31,7 @@
   <meta name="citation_pdf_url" content="https://jackey0903.github.io/PosterLoom/static/pdfs/posterloom.pdf">
 
   <title>PosterLoom | Scientific Papers to Editable Posters</title>
-  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="icon" type="image/png" href="static/images/project/posterloom-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@
   <nav class="site-nav" aria-label="Primary navigation">
     <div class="nav-inner">
       <a class="wordmark" href="#top" aria-label="PosterLoom home">
-        <span class="wordmark-mark">PL</span>
+        <img class="wordmark-logo" src="static/images/project/posterloom-logo.png" alt="" width="42" height="42">
         <span>PosterLoom</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
@@ -79,8 +79,16 @@
     <header class="project-hero" id="top">
       <div class="hero-wash" aria-hidden="true"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Scientific paper to editable poster</p>
-        <h1><span>PosterLoom</span>: Editable, Print-Ready, and Diverse Academic Poster Generation from Scientific Papers</h1>
+        <div class="hero-title-lockup">
+          <img class="hero-logo" src="static/images/project/posterloom-logo.png" alt="PosterLoom paper mascot" width="283" height="283">
+          <div class="hero-title-copy">
+            <p class="eyebrow">Scientific paper to editable poster</p>
+            <h1>
+              <span class="hero-project-name">PosterLoom<span aria-hidden="true">:</span></span>
+              <span class="hero-paper-title">Editable, Print-Ready, and Diverse Academic Poster Generation from Scientific Papers</span>
+            </h1>
+          </div>
+        </div>
         <p class="hero-lede">Fix the structure first, then write to fit. PosterLoom turns one paper into multiple valid poster designs while preserving editability, evidence, and print-readiness.</p>
         <div class="author-line">
           <span>Anonymous Authors</span>
@@ -146,7 +154,7 @@
         </div>
         <figure class="figure-stage reveal">
           <button class="image-zoom" type="button" data-image="static/images/project/framework.png" aria-label="Open the PosterLoom framework figure">
-            <img src="static/images/project/framework.png" alt="PosterLoom pipeline from paper inputs and controls through templates, reusable skills, composition, reflection, and diverse outputs" width="5906" height="3544">
+            <img src="static/images/project/framework.png" alt="PosterLoom framework from paper inputs and user controls through reusable skills, agent composition, VLM reflection, and diverse editable outputs" width="4150" height="2002">
             <span><i class="fas fa-expand" aria-hidden="true"></i> Expand figure</span>
           </button>
           <figcaption>PosterLoom coordinates four specialized agents with six reusable skills. Failed drafts are repaired through rewrite, reflow, or rerender actions; accepted drafts become editable PPTX files with consistent PNG renders.</figcaption>
@@ -170,23 +178,23 @@
         </div>
 
         <div class="variant-gallery reveal">
-          <figure>
-            <button class="image-zoom" type="button" data-image="static/images/project/variant_three_column.png" aria-label="Open three-column poster variant">
-              <img src="static/images/project/variant_three_column.png" alt="Three-column PosterLoom poster variant" loading="lazy">
+          <figure class="variant-card portrait-tall">
+            <button class="image-zoom" type="button" data-image="static/images/project/hags-editorial-portrait.png" aria-label="Open editorial portrait HAGS poster">
+              <img src="static/images/project/hags-editorial-portrait.png" alt="Editorial portrait poster for Active Geospatial Search" loading="lazy" width="1024" height="2048">
             </button>
-            <figcaption><strong>Three-column</strong><span>Balanced reading rhythm</span></figcaption>
+            <figcaption><strong>Editorial portrait</strong><span>Teal · visual-led</span></figcaption>
           </figure>
-          <figure>
-            <button class="image-zoom" type="button" data-image="static/images/project/variant_two_plus_one.png" aria-label="Open two-plus-one poster variant">
-              <img src="static/images/project/variant_two_plus_one.png" alt="Two-plus-one PosterLoom poster variant" loading="lazy">
+          <figure class="variant-card portrait-balanced">
+            <button class="image-zoom" type="button" data-image="static/images/project/hags-analytical-portrait.png" aria-label="Open analytical portrait HAGS poster">
+              <img src="static/images/project/hags-analytical-portrait.png" alt="Analytical portrait poster for Active Geospatial Search" loading="lazy" width="905" height="1280">
             </button>
-            <figcaption><strong>Two + one</strong><span>Evidence-led emphasis</span></figcaption>
+            <figcaption><strong>Analytical portrait</strong><span>Navy · result-led</span></figcaption>
           </figure>
-          <figure>
-            <button class="image-zoom" type="button" data-image="static/images/project/variant_one_plus_two.png" aria-label="Open one-plus-two poster variant">
-              <img src="static/images/project/variant_one_plus_two.png" alt="One-plus-two PosterLoom poster variant" loading="lazy">
+          <figure class="variant-card wide-landscape">
+            <button class="image-zoom" type="button" data-image="static/images/project/hags-wide-landscape.png" aria-label="Open wide landscape HAGS poster">
+              <img src="static/images/project/hags-wide-landscape.png" alt="Wide landscape poster for Active Geospatial Search" loading="lazy" width="1280" height="644">
             </button>
-            <figcaption><strong>One + two</strong><span>Method-led narrative</span></figcaption>
+            <figcaption><strong>Wide landscape</strong><span>Blue · dense evidence</span></figcaption>
           </figure>
         </div>
 
