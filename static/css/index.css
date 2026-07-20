@@ -184,9 +184,27 @@ button { letter-spacing: 0; }
   font-size: 46px;
   line-height: 1.04;
 }
-.hero-lede {
+.hero-acronym {
   max-width: 900px;
   margin: 30px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  color: var(--navy);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+}
+.hero-acronym span { white-space: nowrap; }
+.hero-acronym strong {
+  margin-right: 5px;
+  color: var(--teal);
+  font-size: 17px;
+}
+.hero-lede {
+  max-width: 900px;
+  margin: 22px auto 0;
   color: #334257;
   font-size: clamp(18px, 1.7vw, 23px);
   line-height: 1.55;
@@ -503,8 +521,10 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .project-hero { padding: 112px 18px 38px; background-position: 48% center; }
   .hero-title-lockup { grid-template-columns: 1fr; justify-items: center; gap: 15px; text-align: center; }
   .hero-logo { width: 96px; height: 96px; }
-  .hero-project-name { font-size: 62px; line-height: 0.88; }
-  .hero-paper-title { margin-top: 14px; font-size: 31px; line-height: 1.06; }
+  .hero-project-name { font-size: 50px; line-height: 0.9; }
+  .hero-paper-title { margin-top: 14px; font-size: 28px; line-height: 1.08; }
+  .hero-acronym { gap: 6px 14px; font-size: 11px; }
+  .hero-acronym strong { font-size: 15px; }
   .hero-lede { font-size: 17px; }
   .hero-stats { margin-top: 48px; }
   .hero-stats div { padding: 14px 10px; }
