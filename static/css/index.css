@@ -329,15 +329,23 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
 .gallery-band { background: #eef3f1; }
 .variant-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.75fr;
+  grid-template-columns: 1fr 1fr 1.5fr;
   align-items: center;
   gap: 18px;
 }
 .variant-gallery figure,
 .poster-grid figure { margin: 0; background: var(--paper-bright); }
 .variant-gallery figure { min-width: 0; border-top: 5px solid var(--teal); }
-.variant-gallery figure:nth-child(2) { border-top-color: var(--coral); }
-.variant-gallery figure:nth-child(3) { border-top-color: var(--gold); }
+.variant-gallery > figure:nth-child(2) { border-top-color: var(--coral); }
+.landscape-stack {
+  width: 100%;
+  max-width: 520px;
+  display: grid;
+  gap: 18px;
+  justify-self: center;
+}
+.landscape-stack figure:first-child { border-top-color: var(--gold); }
+.landscape-stack figure:last-child { border-top-color: var(--violet); }
 .variant-gallery figcaption {
   margin: 0;
   padding: 16px 18px 18px;
@@ -482,7 +490,7 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .contribution-strip article:nth-child(3) { border-left: 0; border-top: 1px solid var(--rule-dark); }
   .method-steps article:nth-child(3) { padding-left: 0; border-left: 0; }
   .variant-gallery { grid-template-columns: 1fr 1fr; }
-  .variant-gallery .wide-landscape { grid-column: 1 / -1; }
+  .variant-gallery .landscape-stack { grid-column: 1 / -1; max-width: 620px; }
   .dataset-breakdown { grid-template-columns: repeat(3, 1fr); }
   .dataset-breakdown span:nth-child(4) { border-left: 0; border-top: 1px solid var(--rule-dark); }
   .dataset-breakdown span:nth-child(5) { border-top: 1px solid var(--rule-dark); }
@@ -509,7 +517,7 @@ figure figcaption { margin-top: 14px; color: var(--ink-soft); font-size: 13px; l
   .lead-paragraph { font-size: 23px; }
   .contribution-strip, .method-steps, .poster-grid { grid-template-columns: 1fr; }
   .variant-gallery { grid-template-columns: 1fr; }
-  .variant-gallery .wide-landscape { grid-column: auto; }
+  .variant-gallery .landscape-stack { grid-column: auto; max-width: none; }
   .variant-gallery .portrait-balanced { width: min(100%, 330px); justify-self: center; }
   .contribution-strip article + article { border-left: 0; border-top: 1px solid var(--rule-dark); }
   .method-steps article, .method-steps article + article { padding: 22px 0; border-left: 0; border-bottom: 1px solid var(--rule); }
